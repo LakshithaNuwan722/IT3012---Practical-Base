@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# visual_grid_game.py
+>>>>>>> 6dda72c097f9517ac5bd96ae6e5419e9a965c76a
 import random
 import tkinter as tk
 
@@ -5,7 +9,11 @@ import tkinter as tk
 class VisualGridHuntGame:
     """A flexible Pacman-style grid environment with support for configurable opponents and larger scales."""
 
+<<<<<<< HEAD
     def __init__(self, width=10, height=10, num_food=10, num_opponents=2, custom_walls=None):
+=======
+    def _init_(self, width=10, height=10, num_food=10, num_opponents=2, custom_walls=None):
+>>>>>>> 6dda72c097f9517ac5bd96ae6e5419e9a965c76a
         self.width = width
         self.height = height
         self.agent_pos = [0, 0]  # Starting position (x, y)
@@ -114,7 +122,11 @@ class VisualGridHuntGame:
 class GridGameGUI:
     """Tkinter wrapper that dynamically scales cell sizes to keep larger grids on screen."""
 
+<<<<<<< HEAD
     def __init__(self, root, width=10, height=10, num_food=12, num_opponents=2, walls=None):
+=======
+    def _init_(self, root, width=10, height=10, num_food=12, num_opponents=2, walls=None):
+>>>>>>> 6dda72c097f9517ac5bd96ae6e5419e9a965c76a
         self.root = root
         self.root.title("IT3012 - Scalable Multi-Agent Grid Hunt")
 
@@ -211,7 +223,11 @@ class GridGameGUI:
         step()
 
 
+<<<<<<< HEAD
 if __name__ == "__main__":
+=======
+if _name_ == "_main_":
+>>>>>>> 6dda72c097f9517ac5bd96ae6e5419e9a965c76a
     root = tk.Tk()
     # Try a larger grid size like 12x12 with 15 food and 3 opponents!
     app = GridGameGUI(root, width=12, height=12, num_food=15, num_opponents=0)
